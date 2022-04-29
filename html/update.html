@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a id="toggle">MENU</a>
+        <a class="nav-link " href="../index.html">HOME</a>
+        <a class="nav-link" href="./create.html">CREATE</a>
+        <a class="nav-link" href="./read.html">READ</a>
+        <a class="nav-link" href="./update.html">UPDATE</a>
+        <a class="nav-link" href="./delete.html">DELETE</a>
+    </nav>  
+    
+    <header>
+        <h1>Restaurant profile</h1>
+        <p>Manage information concerning restaurant accounts</p>
+    </header>
+
+    <div class="container">
+        <section id="banner">
+            <h2>Status: <span id="status"></span></h2>
+        </section>
+        <div id="data-table">
+
+        </div>
+        <main class="container">
+            <form id="data-form" class="container">
+                <fieldset id="user-id-field">
+                    <legend>Restaurant id</legend>
+                    <label for="id">ID:</label>
+                    <input type="number" name="id" id="id">
+                </fieldset>
+
+
+                <fieldset id="general-info">
+                    <legend>General information</legend>
+
+                    <label for="restaurant">Restaurant:</label>
+                    <input type="text" id="restaurant" name="title"><br>
+
+                    <label for="foodType">Food Type:</label>
+                    <input type="text" id="foodType" name="foodType"><br>
+
+                    <label for="food">food:</label>
+                    <input type="text" id="food" name="food" required><br>
+
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price"><br>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p><small>Salah Salah- Copyright &copy; 2022</small></p>
+    </footer>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/table-manager.js"></script>
+    <script src="../scripts/error-handler.js"></script>
+    <script src="../scripts/status-handler.js"></script>
+    <script src="../scripts/movies/movie.js"></script>
+    <script src="../scripts/movies/read-movie.js"></script>
+</body>
+</html>

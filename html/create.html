@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Restaurant</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a id="toggle">MENU</a>
+        <a class="nav-link " href="../index.html">HOME</a>
+        <a class="nav-link" href="#">CREATE</a>
+        <a class="nav-link" href="./read.html">READ</a>
+        <a class="nav-link" href="./update.html">UPDATE</a>
+        <a class="nav-link" href="./delete.html">DELETE</a>
+    </nav>
+
+    <header>
+        <h1>Create a Restaurant to review</h1>
+        <p>Add a Restaurant on this page</p>
+    </header>
+
+    <div class="container">
+        <section id="banner" class="container">
+            <h2>Status: <span id="status"></span></h2>
+        </section>
+        <main class="container">
+            <div id="data-table">
+                
+            </div>
+            <h2>Create a restaurant review:</h2>
+            <form id="data-form" class="container">
+               <fieldset id="general-info">
+                    <legend>Restaurant Details</legend>
+                    
+                    <label for="restaurant">Restaurant:</label>
+                    <input type="text" id="restaurant" name="restaurant"><br>
+
+                    <label for="foodType">Food Type:</label>
+                    <input type="text" id="foodType" name="foodType"><br>
+
+                    <label for="food"> Food:</label>
+                    <input type="text" id="food" name="food" required><br>
+
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price"><br>
+
+               </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p><small>Salah Salah - Copyright &copy; 2022</small></p>
+    </footer>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/table-manager.js"></script>
+    <script src="../scripts/error-handler.js"></script>
+    <script src="../scripts/status-handler.js"></script>
+    <script src="../scripts/movies/movie.js"></script>
+    <script src="../scripts/movies/create-movie.js"></script>
+    
+</body>
+</html>
